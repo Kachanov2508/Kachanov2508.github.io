@@ -1,0 +1,25 @@
+:root {
+    --color-primary: #00e0d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+    //FON
+    background-image: linear-gradient(rgba(255, 255, 255, .5)), url(../img/tajem_master.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 565rem;
+}

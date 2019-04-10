@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    max-width: 96rem;
+    margin: 0 auto;
+
+    &__left {
+
+        &--img {}
+    }
+
+    &__right {
+
+        &--text {}
+    }
+
+    &__video {}
+}
