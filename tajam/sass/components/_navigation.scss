@@ -1,0 +1,109 @@
+.navigation-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 10rem;
+    padding-left: 1rem;
+
+    @media only screen and (max-width: 1600px) {
+        width: 70%;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        width: 80%;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        width: 90%;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        width: 94%;
+    }
+
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem 0;
+    }
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    @media only screen and (max-width: 900px) {
+        margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: 703px) {
+        margin-top: 2rem;
+    }
+}
+
+.logo {
+    height: 6rem;
+    width: auto;
+
+    &__text {
+        font-size: 3.5rem;
+        text-transform: lowercase;
+        font-weight: 300;
+        background-image: linear-gradient(to right, #00e0d0, #4aa3cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-left: 1rem;
+    }
+}
+
+.navigation {
+
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        @media only screen and (max-width: 710px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+
+        @media only screen and (max-width: 850px) {
+            margin-bottom: 1rem;
+        }
+
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            font-size: 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--color-white);
+            border-bottom: .2rem solid transparent;
+            padding-bottom: .3rem;
+            transition: all .2s;
+
+            &:hover {
+                border-bottom: .2rem solid var(--color-primary);
+            }
+
+            &:active {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
