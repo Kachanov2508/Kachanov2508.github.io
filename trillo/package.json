@@ -1,7 +1,7 @@
 {
-  "name": "site",
+  "name": "trillo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css -w"
