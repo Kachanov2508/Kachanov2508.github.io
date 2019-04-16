@@ -3,14 +3,13 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 2rem;
+    padding: 2rem;
 
     div {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 0 3rem;
-        margin: 0 auto;
+        flex: 1 1 auto;
 
         img {
             width: 5rem;
@@ -31,15 +30,7 @@
         list-style: none;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        align-self: stretch;
         flex-wrap: wrap;
-        flex: 1 1 auto;
-        padding: 0 3rem;
-
-        @media screen and (max-width: 883px) {
-            justify-content: center;
-        }
 
         li {
             padding: 1rem 0;
@@ -70,4 +61,21 @@
             }
         }
     }
+}
+
+.nav-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: #555;
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s;
 }

@@ -5,10 +5,8 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    overflow: hidden;
 }
-
-
-
 
 
 // SECTION HEADER
@@ -17,7 +15,9 @@
     max-width: 90rem;
     margin: auto;
     margin-top: 17rem;
+    padding: 0 3rem;
     text-align: center;
+
 
     div {
 
@@ -37,5 +37,5 @@
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 4rem;
 }
