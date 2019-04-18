@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 0 1rem;
 
     div {
         display: flex;
@@ -11,18 +11,27 @@
         align-items: center;
         flex: 1 1 auto;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex: 1 1 auto;
+        }
+        
+
         img {
-            width: 5rem;
+            width: 4.5rem;
+            cursor: pointer;
         }
 
         span {
             font-size: 3rem;
-            font-weight: 400;
+            font-weight: 300;
             background-image: var(--color-primary-image);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            text-transform: lowercase;
             margin-left: 1rem;
+            cursor: pointer;
         }
     }
 
@@ -32,16 +41,21 @@
         align-items: center;
         flex-wrap: wrap;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex: 1 1 auto;
+        }
+
         li {
             padding: 1rem 0;
 
             &:not(:last-child) {
-                margin-right: 3rem;
+                margin-right: 2.6rem;
             }
 
             a:link,
             a:visited {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-decoration: none;
                 color: var(--color-white);
                 font-weight: 600;
@@ -79,3 +93,27 @@
     opacity: 0;
     transition: all .3s;
 }
+
+.dotnav {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 13rem;
+    cursor: pointer;
+
+    figure {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: .1rem solid var(--color-white);
+
+        &:first-child {
+            background-color: var(--color-primary);
+        }
+
+        &:not(:last-child) {
+            margin-right: .55rem;
+        }
+    }
+}
+    
