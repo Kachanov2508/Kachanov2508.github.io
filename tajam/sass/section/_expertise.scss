@@ -1,0 +1,29 @@
+.expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    max-width: 96rem;
+    margin: 6rem auto 0;
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 6rem;
+    }
+
+    &__item {
+        flex-basis: 32rem;
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: 4rem;
+
+        img {
+            margin-bottom: 2.5rem;
+        }
+        h3 {
+            margin-bottom: 2rem;
+        }
+    }
+}

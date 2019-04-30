@@ -1,9 +1,9 @@
-@import "components/mixin";
-
 @import "base";
 
-@import "components/btn";
-@import "components/navigation";
+@import "elements/btn";
+@import "elements/navigation";
 
-@import "sections/header";
-@import "sections/story";
+@import "section/amazing";
+@import "section/expertise";
+@import "section/header";
+@import "section/story";

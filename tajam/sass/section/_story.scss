@@ -1,0 +1,78 @@
+.story {
+    margin-top: 6rem;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 81rem;
+        margin: 0 auto;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        margin-right: 10rem;
+        flex-basis: 21rem;
+
+        @media (max-width: 900px) {
+            margin: 0 0 2rem 0;
+        }
+    }
+
+    &__text {
+        flex: 47rem;
+
+        @media (max-width: 900px) {
+            text-align: center;
+            flex: 20rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__video {
+        height: 55rem;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(9, 5, 47, 0.8), rgba(49, 29, 94, 0.8)), url(../img/video.png);
+        background-position: center;
+        background-size: cover;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__video-play {
+        color: #f7f7f7;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        transition: all .2s;
+        text-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            background-image: url(../img/play.png);
+            margin: 0 auto 3rem auto;
+            cursor: pointer;
+        }
+
+        &:hover {
+            transform: scale(.95);
+        }
+    }
+}

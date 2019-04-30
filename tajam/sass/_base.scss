@@ -1,34 +1,37 @@
 :root {
     --color-primary: #00e0d0;
-    --color-primary-image: linear-gradient(to right, #00e0d0, #4aa3cc);
-    --color-primary-opacity: rgba(0, 224, 209, 0.4);
-    --color-white: #f7f7f7;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 html {
 
     font-size: 62.5%;
+    color: #333;
 
-    /* @include respond(tab-land) {
-        font-size: 56.25%;                   //1rem = 9px, 9/16 = 56.25%
+    /* // 1800px
+    @media (min-width: 112.5em) {
+        font-size: 68.75%;
     }
-
-    @include respond(tab-port) {
-        font-size: 50%;                      //1rem = 8px, 8/16 = 50%
+    // 1200px
+    @media (max-width: 75em) {
+        font-size: 56.25%;
     }
-
-    @include respond(phone) {
-        font-size: 43.75%;                   //1rem = 7px, 7/16 = 43.75%
+    // 900px
+    @media (max-width: 56.25em) {
+        font-size: 50%;
     }
-
-    @include respond(big-desktop) {
-        font-size: 75%;                      //1rem = 12px, 8/16 = 75%
+    // 600px
+    @media (max-width: 37.5em) {
+        font-size: 43.75%;
     } */
 }
 
@@ -45,19 +48,46 @@ body {
     height: 540rem;
 }
 
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
 
 .row {
     max-width: 96rem;
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 3.4rem;
-    font-family: 'Playfair Display', serif;
+.sub-heading {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0 2rem;
+
+    &::after {
+        content: "";
+        display: block;
+        margin: 1.5rem auto 0;
+        width: 5rem;
+        height: .2rem;
+        background-color: #ccc;
+    }
+
+    &_white {
+        color: #f7f7f7;
+    }
 }
 
-h2 {
-    font-size: 2.3rem;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
+.color-white {
+    color: #f7f7f7;
 }

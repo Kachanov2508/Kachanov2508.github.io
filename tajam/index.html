@@ -12,53 +12,121 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header-home">
         <div class="row">
-            <a href="#navigation" class="nav-btn"></a>
             <nav class="navigation">
-                <div>
-                    <img src="img/logo.png" alt="Logo">
-                    <span>Tajam</span>
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo Tajam" class="logo__img">
+                    <span class="logo__text">Tajam</span>
                 </div>
-                <ul id="navigation">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">expertise</a></li>
-                    <li><a href="#">teams</a></li>
-                    <li><a href="#">works</a></li>
-                    <li><a href="#">people say</a></li>
-                    <li><a href="#">contact</a></li>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Expertise</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Teams</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Works</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">People say</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
-        <section class="section-header">
-            <div>
-                <h1>We Are Awesome Creative Agency</h1>
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                <a href="#" class="btn">learn more</a>
+        <div class="header-info">
+            <h1 class="header-info__heading">We Are Awesome Creative Agency</h1>
+            <p class="header-info__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+            <a href="#" class="btn">Lear more</a>
+            <div class="dotnav">
+                <div class="dotnav__item dotnav__item_activ"></div>
+                <div class="dotnav__item"></div>
+                <div class="dotnav__item"></div>
+                <div class="dotnav__item"></div>
             </div>
-        </section>
-        <div class="dotnav">
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
         </div>
     </header>
-    <main>
-        <section class="section-story">
-            <div>
-                <img src="/img/replace_with_your_logo.png" alt="replace_with_your_logo">
-                <div>
-                    <h2>Our Story</h2>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
-                    <p> Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <a href="#" class="btn">learn more</a>
-                </div>
+    <section class="story">
+        <div class="row story__box">
+            <img src="img/replace_with_your_logo.png" alt="replace_with_your_logo" class="story__logo">
+            <div class="story__text">
+                <h2>Our story</h2>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <a href="#" class="btn">Lear more</a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="story__video">
+            <span class="story__video-play">Watch our story</span>
+        </div>
+    </section>
+    <section class="expertise">
+        <h2>Expertise</h2>
+        <span class="sub-heading">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
+        <div class="expertise__box">
+            <div class="expertise__item">
+                <img src="img/web_design_development.png" alt="web design & development">
+                <h3>Web design & development</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </div>
+            <div class="expertise__item">
+                <img src="img/branding_identity.png" alt="branding identity">
+                <h3>Branding identity</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </div>
+            <div class="expertise__item">
+                <img src="img/mobile_app.png" alt="mobile app">
+                <h3>Mobile app</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </div>
+            <div class="expertise__item">
+                <img src="img/search_engine_optimization.png" alt="search engine optimization">
+                <h3>Search engine optimization</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </div>
+            <div class="expertise__item">
+                <img src="img/game_development.png" alt="game development">
+                <h3>Game development</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </div>
+            <div class="expertise__item">
+                <img src="img/made_with_love.png" alt="made with love">
+                <h3>Made with love</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="amazing">
+        <h2 class="color-white">Meet our amazing team</h2>
+        <span class="sub-heading sub-heading_white">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
+        <div class="amazing__box">
+            <div class="amazing__item">
+                <div class="amazing__box-img">
+                    <img src="/img/Steven_Hallam.jpg" alt="Steven Hallam">
+                </div>
+                <h3 class="amazing__item-name">Steven Hallam</h3>
+                <span class="amazing__item-category">seo & founder</span>
+            </div>
+            <div class="amazing__item">
+                <div class="amazing__box-img">
+                    <img src="img/Anna_Smith.jpg" alt="Anna Smith">
+                </div>
+                <h3 class="amazing__item-name">Kathryn Jonson</h3>
+                <span class="amazing__item-category">engineering</span>
+            </div>
+            <div class="amazing__item">
+                <div class="amazing__box-img">
+                    <img src="img/Erick_Green.jpg" alt="Anna Smith">
+                </div>
+                <h3 class="amazing__item-name">Erick Green</h3>
+                <span class="amazing__item-category">designer</span>
+            </div>
+            <div class="amazing__item">
+                <div class="amazing__box-img">
+                    <img src="img/Kathryn_Jonson.jpg" alt="Anna Smith">
+                </div>
+                <h3 class="amazing__item-name">Anna Smith</h3>
+                <span class="amazing__item-category">marketing</span>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
