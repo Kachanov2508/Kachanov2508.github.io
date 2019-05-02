@@ -4,23 +4,22 @@
     min-height: 71rem;
     padding: 6rem 2rem;
     background-image: linear-gradient(to right, rgba(9, 5, 47, 0.8), rgba(49, 29, 94, 0.8)), url(../img/amazing-bg.png);
+    background-size: cover;
+    background-position: center;
 
     &__box {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         margin: 4.5rem auto;
-        max-width: 94rem;
     }
 
     &__item {
-        flex: 0 0 calc((100% - (2rem * 3)) / 4);
+        flex: 0 1 calc((94rem - 2rem * 3) / 4);
         border: .1rem solid #f7f7f7;
         padding-bottom: 2rem;
 
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
+        margin: 0 2rem 2rem 0;
 
         h3, 
         span {
@@ -41,6 +40,10 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    &__text {
+        margin-bottom: 2.5rem;
     }
 }
 
