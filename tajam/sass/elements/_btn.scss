@@ -16,4 +16,12 @@
         background-color: rgba(0, 224, 209, 0.5);
         color: #f7f7f7;
     }
+
+    &__form {
+        background-color: transparent;
+        color: var(--color-primary);
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+    }
 }
