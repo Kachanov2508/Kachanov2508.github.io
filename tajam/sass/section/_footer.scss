@@ -1,0 +1,145 @@
+.footer {
+    background-image: linear-gradient(to right, rgba(9, 5, 47, 0.8), rgba(49, 29, 94, 0.8)), url(../img/footer_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5rem;
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 98rem;
+        margin: 0 auto;
+        padding: 7rem 1rem 6rem;
+        color: #f7f7f7;
+        line-height: 1.5;
+    }
+
+    &__box {
+        flex: 0 0 30rem;
+        margin-bottom: 5rem;
+
+        h3 {
+            margin: 2rem 0;
+        }
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 1.5rem;
+    }
+
+    &__address {}
+
+    &__map {
+        margin-bottom: 3rem;
+    }
+
+    &__phone {}
+
+    &__newsletter {
+
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__email {
+        padding: 1.5rem 2rem;
+        border: .2rem solid #f7f7f7;
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+            color: #f7f7f7;
+        }
+    }
+
+    &__help {
+        max-width: 98rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+        color: #f7f7f7;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__box-menu {}
+
+    &__menu {
+        display: flex;
+        list-style: none;
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__menu-item {
+
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+
+        a:link,
+        a:visited {
+            color: #f7f7f7;
+            text-transform: uppercase;
+        }
+    }
+
+    &__copyright {
+        display: block;
+
+        i {
+            font-size: 1rem;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    margin-top: 2.5rem;
+
+    &__icon {
+        font-size: 4rem;
+        line-height: .7;
+        transition: all .2s;
+        overflow: hidden;
+        cursor: pointer;
+        backface-visibility: hidden;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            // font-size: 4.2rem;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.btn-newsletter {
+    padding: .8rem 2.2rem;
+    font-size: 2.5rem;
+    margin-left: .5rem;
+    background-color: transparent;
+    outline: none;
+    border: .2rem solid #f7f7f7;
+    color: #f7f7f7;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(.95);
+    }
+}
