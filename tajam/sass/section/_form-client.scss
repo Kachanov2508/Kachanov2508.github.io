@@ -12,15 +12,20 @@
     flex-direction: column;
     align-items: center;
     align-items: flex-start;
-    flex: 0 0 50%;
-    margin-right: 10%;
+    flex: 0 0 46rem;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding-right: 3rem;
+
+    @media screen and (max-width: 900px) {
+        margin: 0 auto 3rem;
+    }
 
     h2 {
         margin-bottom: 3rem;
     }
 
     form {
-
         width: 100%;
 
         input {
@@ -63,14 +68,23 @@
 }
 
 .clients {
-    flex: 0 0 40%;
+    flex: 0 0 38rem;
 
     &__box {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 1.3rem;
     }
 
     &__logo {
         flex: 1 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 7.5rem;
+        margin-bottom: 2rem;
+
+        /* background-color: tomato;
+        border: 1px solid; */
     }
 }
