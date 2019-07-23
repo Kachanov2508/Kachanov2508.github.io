@@ -68,22 +68,3 @@ function filterTasks(e) {
 
 
 
-
-
-let val;
-val = document;
-let valAll = document.all;
-console.log(valAll);
-
-
-
-
-
-
-
-
-
-
-
-/* +49 177 59 79 016
-Anna */

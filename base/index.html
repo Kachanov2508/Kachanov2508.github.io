@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="card">
+        <h2>Node.textContent</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Позволяет задавать или получать текстовое содержимое элемента и его потомков.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var text = element.textContent;</p>
+                <p>element.textContent = "Это просто текст";</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/kBfPnh4QdXvueg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/textContent" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.innerHTML</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство Element.innerHTML устанавливает или получает разметку дочерних элементов.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>const content = element.innerHTML; element.innerHTML = htmlString;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/kBfPnh4QdXvueg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/innerHTML" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Document.getElementsByClassName()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает массивоподобный (итерируемый) объект всех дочерних элементов, соответствующих всем из указанных имен классов. В случае вызова по отношению к объекту 'document', поиск происходит по всему документу, включая корневой элемент. Вызывать getElementsByClassName() можно также применительно к любому элементу: возвращены будут лишь те элементы, которые являются потомками указанного корневого элемента и имеют при этом указанные классы.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var elements = document.getElementsByClassName(names); // или:</p>
+                <p>var elements = rootElement.getElementsByClassName(names);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6_nNbrsxayFsLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Document/getElementsByClassName" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Document.getElementsByTagName() </h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает HTMLCollection элементов с указанным именем тега. Поиск осуществляется по всему документу, включая корневой узел. Возвращаемая HTMLCollection живая, это значит что она автоматически обновляет сама себя чтобы оставаться синхронизированной с DOM деревом без необходимости вызова document.getElementByTagName() снова.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var elements = document.getElementsByTagName(name);</p>
+            </div>
+            <p>Примечание: Последняя W3C спецификация говорит что elements является HTMLCollection; между тем, данный метод возвращает NodeList в WebKit браузерах. См. баг 14869 для большей информации.</p>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6_nNbrsxayFsLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Document/getElementsByTagName" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.getElementsByTagName()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Element.getElementsByTagName() метод возвращает живую коллекцию элементов HTMLCollection , учитывая имя тэга. Поиск осуществляется в поддереве указанного элемента, в результат поиска не попадает сам элемент, в поддереве которого осуществлялся поиск. Возвращает живой список, который автоматически обновляется при изменении DOM. Поэтому не нужно вызывать метод Element.getElementsByTagName() несколько раз с одними и теми же аргументами, содержимое списка обновляется автоматически.</p>
+            <p>При вызове на HTML-элементе в HTML-документе метод getElementsByTagName переводит аргумент по которому осуществляется поиск (имя тега) в нижний регистр до того как начать поиск. Это нежелательно, когда необходимо использовать метод для поиска SVG элементов, где в наименовании тега может использоваться верблюжья (camel-cased) нотация. В этом случае правильно использовать метод Element.getElementsByTagNameNS().</p>
+            <p>Element.getElementsByTagName похож на Document.getElementsByTagName(), за исключением того, что поиск осуществляется среди потомков конкретного элемента, а не во всём HTML-документе.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>elements = element.getElementsByTagName(tagName)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6_nNbrsxayFsLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/getElementsByTagName" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Array.from()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Array.from() создаёт новый экземпляр Array из массивоподобного или итерируемого объекта.</p>
+            <p>В ES2015 классовый синтаксис позволяет создавать подклассы как встроенных классов, так и классов, определённых пользователем; в результате статические методы класса, вроде Array.from «наследуются» подклассами Array и создают новые экземпляры подкласса, а не класса Array.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>Array.from(arrayLike[, mapFn[, thisArg]])</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6_nNbrsxayFsLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/from" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Array.forEach()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>arr.forEach(function callback(currentValue, index, array) {<br>
+                        //your iterator<br>
+                    }[, thisArg]);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6_nNbrsxayFsLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Document.querySelectorAll()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает список элементов в пределах документа (поиск осуществляется в пределах указанного элемента), которые соответствуют указанной группе селекторов. Возвращает объект типа NodeList, содержащий все найденные элементы в том порядке, в котором они находятся в документе.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>elementList = document.querySelectorAll(selectors);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6_nNbrsxayFsLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+1 заказ
+4 августа
+Аттракционы в аренду: 
+Надувной город для детей – 1 шт
+Турники – 1- 3 шт
+Дартс – 1-3 шт
+Гигантская дженга – 1 шт
+Аттракцион «Клетка» - 1 шт
+Аниматоры для работы с детьми, 3 человека на 4 часа каждый.
+Арка из шаров на вход
+Еще важный вопрос – работаете ли Вы с НДС?
+
+
+2 заказ
+23 августа
+Аттракционы в аренду:
+3 зорба
+1 полоса препятствий
+10 каяков или байдарок.
