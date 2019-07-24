@@ -157,7 +157,7 @@
             <h4>Синтаксис:</h4>
             <div>
                 <p>arr.forEach(function callback(currentValue, index, array) {<br>
-                        //your iterator<br>
+                    //your iterator<br>
                     }[, thisArg]);</p>
             </div>
         </div>
@@ -189,27 +189,848 @@
         </div>
     </div>
 
+    <div class="card">
+        <h2>Node.children</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство Node.children возвращает живую коллекцию (HTMLCollection) дочерних элементов узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var elList = elementNodeReference.children;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/ParentNode/children" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.firstChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство Node.firstChild только для чтения, возвращающее первый потомок узла в древе или null, если узел является бездетным. Если узел это документ, он возвращает первый узел в списке своих прямых детей.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var childNode = node.firstChild;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/firstChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>ParentNode.firstElementChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает первый дочерный элемент объекта (Element) или null если дочерних элементов нет.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var childNode = elementNodeReference.firstElementChild;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/ParentNode/firstElementChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.lastChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>lastChild возвращает последнего потомка в узле.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var last_child = element.lastChild</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/lastChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>ParentNode.lastElementChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает последний дочерний элемент объекта или null если нет дочерних элементов.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var element = node.lastElementChild;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/ParentNode/lastElementChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.childNodes</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает коллекцию дочерних элементов данного элемента.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var ndList = elementNodeReference.childNodes;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/childNodes" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.childElementCount</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает число дочерних элементов узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var elCount = Node.childElementCount; </p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/ParentNode/childElementCount" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.nodeType</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает беззнаковое короткое целочисленное значение, представляющее тип узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var type = node.nodeType;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/nodeType" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.parentNode</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает родителя определенного элемента DOM дерева.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>parentNode = node.parentNode</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/parentNode" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.parentElement</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает родителя узла DOM Element, или null если узел не имеет родителя, или его родитель не DOM Element.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>parentElement = node.parentElement</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/parentElement" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.nextSibling</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает узел, непосредственно следующий за данным узлом в списке childNodes его родительского элемента, или null если данный узел последний в этом списке.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>nextNode = node.nextSibling</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/nextSibling" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>NonDocumentTypeChildNode.nextElementSibling</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>NonDocumentTypeChildNode.nextElementSibling свойство только для чтения, возвращающее последующий элемент перед текущим, или null, если элемент является последним в своём родительском узле.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var nextNode = elementNodeReference.nextElementSibling;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/NonDocumentTypeChildNode/NonDocumentTypeChildNode.nextElementSibling" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.previousSibling</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство Node.previousSibling используется только для чтения, оно возвращает узел предшедствующий указанному в родительском элементе childNodes, или null, если указанный узел первый в своём родителе.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>previousNode = node.previousSibling;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/previousSibling" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>NonDocumentTypeChildNode.previousElementSibling</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство NonDocumentTypeChildNode.previousElementSibling только для чтения возвращает Element элемент стоящий перед применяемым, из списка дочерних элементов родителя или возвращает null, если таковых не имеется.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>prevNode = elementNodeReference.previousElementSibling;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/nadyAxMUnUp7Gg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/NonDocumentTypeChildNode/previousElementSibling" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>document.createElement</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>В HTML-документах создает указанный в аргументе элемент или HTMLUnknownElement, если элемент неизвестен.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var element = document.createElement(tagName[, options]);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/R9livIBLdpdnDw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/DOM/document.createElement" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.className</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство className отвечает за значение атрибута class элемента.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var cName = elem.className;</p>
+                <p>elem.className = cName;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/R9livIBLdpdnDw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/className" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>id элемента</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство id Element представляет идентификатор элемента, отражая глобальный аттрибут id.</p>
+            <p>Если значение id не пустое, то оно должно быть уникально в документе.</p>
+            <p>id часто используется с getElementById, чтобы получить нужный элемент. Часто применяют ID как селектор, для стилизации документа, с помощью CSS.</p>
+        </div>
+        <p>Замечание: идентификаторы чувствительны к регистру, но вам следует избегать создание id, которых различает регистр</p>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var idStr = element.id; // Получаем id.</p>
+                <p>element.id = idStr; // Применяем id</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/R9livIBLdpdnDw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/id" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.getAttribute()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>getAttribute() возвращает значение указанного атрибута элемента. Если элемент не содержит данный атрибут, могут быть возвращены null или "" (пустая строка); подробнее Notes.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var attribute = element.getAttribute(attributeName);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/getAttribute" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.setAttribute()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Добавляет новый атрибут или изменяет значение существующего атрибута у выбранного элемента.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>element.setAttribute(name, value);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/R9livIBLdpdnDw" target="_blank">Видео</a>
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/setAttribute" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.hasAttribute()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Element.hasAttribute() метод возвращает Boolean значение указывающее, имеет ли указанный элемент указанный атрибут или нет.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var result = element.hasAttribute(attName);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/hasAttribute" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.removeAttribute()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>removeAttribute удаляет аттрибут с элемента.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>element.removeAttribute(attrName);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/removeAttribute" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.appendChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Добавляет элемент в конец списка дочерних элементов родителя. Если элемент уже существует он удаляется из текущего родителя и вставляется заново.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var child = element.appendChild(child);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/R9livIBLdpdnDw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/appendChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Document.createTextNode()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Создает новый текстовый узел.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var text = document.createTextNode(data);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/R9livIBLdpdnDw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Document/createTextNode" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.replaceChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Заменяет дочерний элемент на выбранный. Возвращает замененный элемент.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>replacedNode = parentNode.replaceChild(newChild, oldChild);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node.replaceChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.remove()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Node.remove() удаляет узел из дерева DOM</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>Node.remove();</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/ChildNode/remove" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.removeChild</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Удаляет дочерний элемент из DOM. Возвращает удаленный элемент.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var oldChild = element.removeChild(child);</p>
+                <p>element.removeChild(child);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/removeChild" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Element.classList</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство classList возвращает псевдомассив DOMTokenList, содержащий все классы элемента.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var elementClasses = elem.classList;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/JXaH74NOavHlKQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/classList" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Node.contains</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Указывает, является ли узел потомком данного узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>node.contains( otherNode )</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/44jl55W620Gb4A" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/contains" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>EventTarget.addEventListener()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод EventTarget.addEventListener() регистрирует определенный обработчик события, вызванного на EventTarget.</p>
+            <p>EventTarget должен быть либо существующим элементом в документе, либо Document, либо Window, либо любым другим объектом, который поддерживает события (такой, как XMLHttpRequest).</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>target.addEventListener(type, listener[, options]);</p>
+                <p>target.addEventListener(type, listener[, useCapture]);</p>
+                <p>target.addEventListener(type, listener[, useCapture, wantsUntrusted ]); // только Gecko/Mozilla</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Event.preventDefault()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Отменяет событие, если оно отменяемое, без остановки дальнейшего распространения этого события.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>event.preventDefault();</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Event/preventDefault" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Event.target</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Ссылка на объект, который был инициатором события. Он может отличаться от event.currentTarget, если обработчик события вызывается во время всплытия (bubbling) или захвата события.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>theTarget = event.target</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Event/target" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Event.type</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Event.type - это доступное только для чтения свойство, возвращающее строку, содержащую тип события. Оно устанавливается в момент создания события и это имя обычно используется для ссылки на определенное событие.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>event.type</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://yadi.sk/i/1AxcdLHAZkpEqQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Event/type" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Event.timeStamp</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Возвращает время (в миллисекундах), из которого было создано событие.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>event.timeStamp</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/API/Event/timeStamp" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>MouseEvent.offsetY</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>offsetY свойство только для чтения из MouseEvent интерфейса обеспечивает смещение в Y - координате курсора мыши между этим событием и отступом краем целевого узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>event.timeStamp</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetY" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>MouseEvent.offsetY</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>offsetY свойство только для чтения из MouseEvent интерфейса обеспечивает смещение в Y - координате курсора мыши между этим событием и отступом краем целевого узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var yOffset = instanceOfMouseEvent.offsetY;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetY" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>MouseEvent.offsetX</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>offsetX свойство только для чтения из MouseEvent интерфейса обеспечивает смещение в X - координате курсора мыши между этим событием и отступом краем целевого узла.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var xOffset = instanceOfMouseEvent .offsetX;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetX" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>MouseEvent.clientY</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>clientY свойство только для чтения из MouseEvent интерфейса обеспечивает вертикальную координату в пределах клиентской области приложения, на котором произошло событие (в отличие от координат в пределах страницы).</p>
+            <p>Например, нажатие на верхний край клиентской области всегда приведет к событию мыши со clientY значением 0, независимо от того, прокручивается ли страница вертикально.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var y = instanceOfMouseEvent .clientY</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientY" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>MouseEvent.clientX</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>clientX свойство только для чтения из MouseEvent интерфейса обеспечивает горизонтальную координату в пределах клиентской области приложения, на котором произошло событие (в отличие от координат в пределах страницы).</p>
+            <p>Например, щелчок по левому краю клиентской области всегда приведет к событию мыши со clientX значением 0, независимо от того, прокручивается ли страница горизонтально.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var x = instanceOfMouseEvent .clientX</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/MfchYgkw72WRJw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>MouseEvent</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Интерфейс MouseEvent представляет собой событие, которое происходит в результате взаимодествия пользователя с манипулятором ( например, мышью). Наиболее частые из таких событий: click, dblclick, mouseup, mousedown.</p>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/1AxcdLHAZkpEqQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/MouseEvent" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/mouse-clicks" target="_blank">learn.js</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>KeyboardEvent</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Объекты KeyboardEvent описывают работу пользователя с клавиатурой. Каждое событие описывает клавишу; тип события (keydown, keypress или keyup) определяет произведённый тип действия.</p>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/44jl55W620Gb4A" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/KeyboardEvent" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/keyboard-events" target="_blank">learn.js</a>
+        </div>
+    </div>
+
 
 </body>
 
 </html>
-
-1 заказ
-4 августа
-Аттракционы в аренду: 
-Надувной город для детей – 1 шт
-Турники – 1- 3 шт
-Дартс – 1-3 шт
-Гигантская дженга – 1 шт
-Аттракцион «Клетка» - 1 шт
-Аниматоры для работы с детьми, 3 человека на 4 часа каждый.
-Арка из шаров на вход
-Еще важный вопрос – работаете ли Вы с НДС?
-
-
-2 заказ
-23 августа
-Аттракционы в аренду:
-3 зорба
-1 полоса препятствий
-10 каяков или байдарок.
