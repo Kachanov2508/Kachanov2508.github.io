@@ -1044,7 +1044,158 @@
         </div>
     </div>
 
+    <div class="card">
+        <h2>Window.localStorage, sessionStorage</h2>
 
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство localStorage позволяет получить доступ к локальному Storage объекту. localStorage аналогично свойству sessionStorage. Разница только в том, что свойство sessionStorage хранит данные в течение сеанса (до закрытия браузера), в отличие от данных, находящихся в свойстве localStorage, которые не имеют ограничений по времени хранения и могут быть удалены только с помощью JavaScript. </p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>myStorage = localStorage;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Storage.setItem()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Если методу setItem() интерфейса Storage передать ключ и значение, то в хранилище будет добавлено соответствующее ключу значение, либо, если запись уже есть в хранилище, то значение по ключу будет обновлено.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>storage.setItem(названиеКлюча, значениеКлюча);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Storage/setItem" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Storage.getItem()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Если в метод getItem() интерфейса Storage передать ключ в качестве параметра, то метод вернет значение, которое лежащее в хранилище по указанному ключу.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var aValue = storage.getItem(названиеКлюча);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Storage/getItem" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Storage.removeItem()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Если методу removeItem() интерфейса Storage передать ключ, то из хранилища будет удален элемент с указанным ключем.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>storage.removeItem(keyName);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Storage/removeItem" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Storage.clear()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод clear() интерфейса Storage удалит все значения из хранилища.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>storage.clear();</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Storage/clear" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>JSON.parse()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод JSON.parse() разбирает строку JSON, возможно с преобразованием получаемого в процессе разбора значения.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>JSON.parse(text[, reviver])</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>JSON.stringify()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод JSON.stringify() преобразует значение JavaScript в строку JSON, возможно с заменой значений, если указана функция замены, или с включением только определённых свойств, если указан массив замены.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>JSON.stringify(value[, replacer[, space]])</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/livJCDvof-CKkw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
