@@ -63,6 +63,7 @@ function removeTask(e) {
 
 // Clear task
 function clearTask(e) {
+    
     while (taskList.firstChild) {
         // taskList.firstChild.remove();
         taskList.removeChild(taskList.firstChild);
@@ -73,6 +74,16 @@ function clearTask(e) {
 
 // Filter tasks
 function filterTasks(e) {
-    const text = e.target.value;
-    console.log(text);
+    const text = e.target.value.toLowerCase();
+    
+    document.querySelectorAll('.collection-item').forEach(function(task) {
+        const item = task.firstChild.textContent;
+        
+        if (item.toLowerCase().indexOf(text) != -1) {
+            task.style.display = 'block';
+        } else {
+            task.style.display = 'none';
+        }
+
+    });
 }
