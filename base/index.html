@@ -1234,6 +1234,27 @@
     </div>
 
     <div class="card">
+        <h2>parseInt()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Функция parseInt() принимает строку в качестве аргумента и возвращает целое число в соответствии с указанным основанием системы счисления.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>parseInt(string, radix);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/IgFM-iFwR-AEWQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
         <h2>Math.pow()</h2>
 
         <div class="annotaciya">
@@ -1336,6 +1357,112 @@
         <div class="link">
             <a href="https://yadi.sk/i/2EURAvBxfECJow" target="_blank">Видео</a>
             <a href="https://developer.mozilla.org/ru/docs/Web/API/WindowTimers/setTimeout" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>isNaN</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Функция isNaN() определяет является ли литерал или переменная нечисловым значением (NaN) или нет. При работе с функцией необходимо проявлять осторожность так как она имеет свои особенности. В качестве альтернативы можно использовать метод Number.isNaN() из ECMAScript 6, или дополнительно проверять литерал или переменную на нечисловое значение при помощи typeof.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>isNaN(значение)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/IgFM-iFwR-AEWQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/isNaN" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>disabled</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Указывает, отключен ли элемент или нет. В случае, если элемент имеет значение true, он отключается. Отключенные элементы имеют, как правило, так называемый "затенённый" цветовой эффект. Если элемент отключен, он не будет отвечать на какие-либо действия пользователя, он не может быть выбран, и событие command в этом случае не вызывается.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>.disabled = true / false</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/IgFM-iFwR-AEWQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Mozilla/Tech/XUL/Attribute/disabled" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Location.reload()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Location.reload() перезагружает ресурс из текущего URL. Единственный опциональный параметр Boolean, при значении true указывает, что страница должна быть перезагружена с сервера. Иначе браузер может загрузить страницу из кэша. Кроме того флаг forcedReload также может влиять на поведение скролла: обычная перезагрузка старается восстановить позицию, в то время как при включенном флаге при завершении загрузки DOM устанавливается scrollTop == 0.</p>
+            <p>Если условия вызова метода не удовлетворяют требованиям безопасности, выбрасывается DOMException с типом SECURITY_ERROR. Это случается, если домен скрипта, вызывающего метод, не совпадает с доменом страницы, изначально содержащимся в Location.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>object.reload(forcedReload);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/yGonCWlzDPZg5g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Location/reload" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Math.random()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Math.random() возвращает псевдослучайное число с плавающей запятой из диапазона [0, 1), то есть, от 0 (включительно) до 1 (но не включая 1), которое затем можно отмасштабировать до нужного диапазона. Реализация сама выбирает начальное зерно для алгоритма генерации случайных чисел; оно не может быть выбрано или сброшено пользователем.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>Math.random()</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/yGonCWlzDPZg5g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Math.floor()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Math.floor() возвращает целое число, которое меньше или равно данному числу.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>Math.floor(x)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/yGonCWlzDPZg5g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" target="_blank">Mozilla</a>
         </div>
     </div>
 
