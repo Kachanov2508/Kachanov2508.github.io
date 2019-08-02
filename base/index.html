@@ -1322,7 +1322,7 @@
 
         <div class="annotaciya">
             <h4>Аннотация:</h4>
-            <p>Метод Node.insertBefore() добавляет элемент в  список дочерних элементов родителя перед указанным элементом.</p>
+            <p>Метод Node.insertBefore() добавляет элемент в список дочерних элементов родителя перед указанным элементом.</p>
         </div>
 
         <div class="sintaksis">
@@ -1463,6 +1463,166 @@
         <div class="link">
             <a href="https://yadi.sk/i/yGonCWlzDPZg5g" target="_blank">Видео</a>
             <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Math.abs()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Math.abs() возвращает абсолютное значение числа.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>Math.abs(x)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/SxCeAHrqGUHF3Q" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/abs" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Date</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Создаёт экземпляр объекта Date, представляющего собой момент времени. Объекты даты Date основываются на значении количества миллисекунд, прошедших с 1 января 1970 года в часовом поясе UTC.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>new Date();</p>
+                <p>new Date(value);</p>
+                <p>new Date(dateString);</p>
+                <p>new Date(year, month[, day[, hour[, minute[, second[, millisecond]]]]]);</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/SxCeAHrqGUHF3Q" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Date.now()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод Date.now() возвращает количество миллисекунд, прошедших с 1 января 1970 года 00:00:00 по UTC.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var timeInMs = Date.now();</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/SxCeAHrqGUHF3Q" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/now" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Date.prototype.getTime()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод getTime() возвращает числовое значение, соответствующее указанной дате по всемирному координированному времени.</p>
+            <p>Вы можете использовать этот метод для того, чтобы присвоить дату и время другому объекту Date. Этот метод функционально эквивалентен методу valueOf().</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>dateObj.getTime()</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/SxCeAHrqGUHF3Q" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Date.prototype.getFullYear()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод getFullYear() возвращает год указанной даты по местному времени.</p>
+            <p>Используйте этот метод вместо метода getYear()</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>dateObj.getFullYear()</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/SxCeAHrqGUHF3Q" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Object.prototype.constructor (Функция-конструктор)</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Функции-конструкторы являются обычными функциями. Но есть два соглашения:</p>
+            <ol>
+                <li>Имя функции-конструктора должно начинаться с большой буквы.</li>
+                <li>Функция-конструктор должна вызываться при помощи оператора "new".</li>
+            </ol>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>function User(name) {<br>
+                    this.name = name;<br>
+                    this.isAdmin = false;<br>
+                  }</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/SxCeAHrqGUHF3Q" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/constructor-new#funktsiya-konstruktor" target="_blank">learn.js</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>new String()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Глобальный объект String является конструктором строк, или, последовательностей символов.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>new String(thing)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Rk5HH-MYfEqZXw" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">Mozilla</a>
         </div>
     </div>
 
