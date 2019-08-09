@@ -1595,7 +1595,7 @@
                 <p>function User(name) {<br>
                     this.name = name;<br>
                     this.isAdmin = false;<br>
-                  }</p>
+                    }</p>
             </div>
         </div>
 
@@ -1666,6 +1666,153 @@
         <div class="link">
             <a href="https://yadi.sk/i/7dpigLimolDeVw" target="_blank">Видео</a>
             <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes/static" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest (XHR)</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>XMLHttpRequest это API, который предоставляет клиенту функциональность для обмена данными между клиентом и сервером. Данный API предоставляет простой способ получения данных по ссылке без перезагрузки страницы. Это позволяет обновлять только часть веб-страницы не прерывая пользователя. XMLHttpRequest используется в AJAX запросах и особенно в single-page приложениях.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var myRequest = new XMLHttpRequest();</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/xmlhttprequest" target="_blank">learn.js</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest.open()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод XMLHttpRequest.open() инициализирует запрос. Этот метод должен использоваться из JavaScript кода; для инициализации запроса из машинного кода, используйте openRequest().</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>XMLHttpRequest.open(method, url)</p>
+                <p>XMLHttpRequest.open(method, url, async)</p>
+                <p>XMLHttpRequest.open(method, url, async, user)</p>
+                <p>XMLHttpRequest.open(method, url, async, user, password)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/open" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/ajax-xmlhttprequest#nastroit-open" target="_blank">learn.js</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest.responseText</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Только для чтения XMLHttpRequest свойство responseText возвращает текст ответа от сервера на отправленный запрос.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>var resultText = XMLHttpRequest.responseText;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/responseText" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest.send()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод XMLHttpRequest.send() отправляет запрос. Если запрос асинхронный (каким он является по-умолчанию), то возврат из данного метода происходит сразу после отправления запроса. Если запрос синхронный, то метод возвращает управление только после получения ответа. Метод send() принимает необязательные аргументы в тело запросов. Если метод запроса GET или HEAD, то аргументы игнорируются и тело запроса устанавливается в null.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>XMLHttpRequest.send(body)</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/send" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest.onreadystatechange</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Обработчик события (EventHandler), который вызывается всякий раз, когда изменяется состояние свойства readyState. Свойство XMLHttpRequest.onreadystatechange содержит обработчик события, вызываемый когда происходит событие readystatechange, всякий раз  когда свойство readyState запроса XMLHttpRequest изменяется. Функция обратного вызова запускается из потока пользовательского интерфейса.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>XMLHttpRequest.onreadystatechange = callback;</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/onreadystatechange" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest.status</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Доступное только для чтения свойство XMLHttpRequest.status, возвращает числовой код состояния HTTP ответа XMLHttpRequest.</p>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/status" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequest.readyState</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Свойство XMLHttpRequest.readyState возвращает текущее состояние объекта XMLHttpRequest.</p>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest/readyState" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>XMLHttpRequestEventTarget.onprogress</h2>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Y_r2-PRozkEK8g" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget/onprogress" target="_blank">Mozilla</a>
         </div>
     </div>
 
