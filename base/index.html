@@ -1830,6 +1830,107 @@
         </div>
     </div>
 
+    <div class="card">
+        <h2>String.prototype.split()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод split() разбивает объект String на массив строк путём разделения строки указанной подстрокой.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>str.split([separator[, limit]])</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c" target="_blank">Видео (22:30 мин.)</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Promise</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Объект Promise (обещание) используется для отложенных и асинхронных вычислений. Promise может находиться в трёх состояниях:</p>
+            <ul>
+                <li>ожидание (pending): начальное состояние, не выполнено и не отклонено.</li>
+                <li>выполнено (fulfilled): операция завершена успешно.</li>
+                <li>отклонено (rejected): операция завершена с ошибкой.</li>
+            </ul>
+            <p>Другой термин, описывающий состояние заданный (settled): обещание выполнено или отклонено, но не находится в состоянии ожидания.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>new Promise(executor);</p>
+                <p>new Promise(function(resolve, reject) { ... });</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/-n7HcmeJG992Fg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Mozilla</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Ispolzovanie_promisov" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/promise-basics" target="_blank">learn.js</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Promise.prototype.then()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод then() возвращает Promise (обещание). Метод принимает два аргумента, колбэк-функции для случаев выполнения и отказа соответственно.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>p.then(onFulfilled, onRejected);</p>
+                <p>p.then(function(value) {<br>
+                    // выполнение<br>
+                   }, function(reason) {<br>
+                   // отказ<br>
+                 });</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/-n7HcmeJG992Fg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Promise.prototype.catch()</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Метод catch() возвращает Promise(обещание) и работает только в случае отклонения обещания. Ведет себя аналогично вызову Promise.prototype.then(undefined, onRejected).</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>p.catch(onRejected);</p>
+                <p>p.catch(function(reason) {<br>
+                    // отказ<br>
+                 });</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/-n7HcmeJG992Fg" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
 
 
 
