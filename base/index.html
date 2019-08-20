@@ -1763,7 +1763,7 @@
 
         <div class="annotaciya">
             <h4>Аннотация:</h4>
-            <p>Обработчик события (EventHandler), который вызывается всякий раз, когда изменяется состояние свойства readyState. Свойство XMLHttpRequest.onreadystatechange содержит обработчик события, вызываемый когда происходит событие readystatechange, всякий раз  когда свойство readyState запроса XMLHttpRequest изменяется. Функция обратного вызова запускается из потока пользовательского интерфейса.</p>
+            <p>Обработчик события (EventHandler), который вызывается всякий раз, когда изменяется состояние свойства readyState. Свойство XMLHttpRequest.onreadystatechange содержит обработчик события, вызываемый когда происходит событие readystatechange, всякий раз когда свойство readyState запроса XMLHttpRequest изменяется. Функция обратного вызова запускается из потока пользовательского интерфейса.</p>
         </div>
 
         <div class="sintaksis">
@@ -1878,6 +1878,7 @@
             <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Mozilla</a>
             <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Ispolzovanie_promisov" target="_blank">Mozilla</a>
             <a href="https://learn.javascript.ru/promise-basics" target="_blank">learn.js</a>
+            <a href="https://medium.com/@stasonmars/%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%8B-%D0%B2-javascript-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-60bbef963541" target="_blank">medium</a>
         </div>
     </div>
 
@@ -1895,9 +1896,9 @@
                 <p>p.then(onFulfilled, onRejected);</p>
                 <p>p.then(function(value) {<br>
                     // выполнение<br>
-                   }, function(reason) {<br>
-                   // отказ<br>
-                 });</p>
+                    }, function(reason) {<br>
+                    // отказ<br>
+                    });</p>
             </div>
         </div>
 
@@ -1921,13 +1922,82 @@
                 <p>p.catch(onRejected);</p>
                 <p>p.catch(function(reason) {<br>
                     // отказ<br>
-                 });</p>
+                    });</p>
             </div>
         </div>
 
         <div class="link">
             <a href="https://yadi.sk/i/-n7HcmeJG992Fg" target="_blank">Видео</a>
             <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Fetch</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Fetch API предоставляет интерфейс JavaScript для работы с запросами и ответами HTTP. Он также предоставляет глобальный метод fetch(), который позволяет легко и логично получать ресурсы по сети асинхронно.</p>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/zrLySzs0S9BNhA" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">Mozilla</a>
+            <a href="https://learn.javascript.ru/fetch" target="_blank">learn.js</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Arrow Functions (Стрелочные функции)</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Выражения стрелочных функций имеют более короткий синтаксис по сравнению с функциональными выражениями и лексически привязаны к значению this (но не привязаны к собственному this, arguments, super, или new.target). Стрелочные функции всегда анонимные.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>(param1, param2, …, paramN) => { statements }</p>
+                <p>(param1, param2, …, paramN) => expression</p>
+                <p>// эквивалентно: (param1, param2, …, paramN) => { return expression; }</p>
+                <p>// Круглые скобки не обязательны для единственного параметра:</p>
+                <p>(singleParam) => { statements }</p>
+                <p>singleParam => { statements }</p>
+                <p>// Функция без параметров нуждается в круглых скобках:</p>
+                <p>() => { statements }</p>
+                <p>() => expression </p>
+                <p>// Эквивалентно: () => { return expression; }</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/Wzxt5RGWCc8uLQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">Mozilla</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>async function</h2>
+
+        <div class="annotaciya">
+            <h4>Аннотация:</h4>
+            <p>Объявление async function определяет асинхронную функцию, которая возвращает объект AsyncFunction.</p>
+        </div>
+
+        <div class="sintaksis">
+            <h4>Синтаксис:</h4>
+            <div>
+                <p>async function name([param[, param[, ... param]]]) {<br>
+                    statements<br>
+                 }</p>
+            </div>
+        </div>
+
+        <div class="link">
+            <a href="https://yadi.sk/i/6ej3v4iKneI3xQ" target="_blank">Видео</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank">Mozilla</a>
+            <a href="https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436" target="_blank">medium</a>
         </div>
     </div>
 
