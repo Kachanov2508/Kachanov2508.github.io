@@ -1,8 +1,7 @@
-const tabItem = document.querySelectorAll('.tab-item');
-const tabContent = document.querySelectorAll('.tab-content-item');
+let tabItem = document.querySelectorAll('.tab-item');
+let tabContent = document.querySelectorAll('.tab-content-item');
 
 tabItem.forEach(item => item.addEventListener('click', show));
-
 
 function show() {
     hideBorder();
