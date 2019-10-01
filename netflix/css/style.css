@@ -370,11 +370,9 @@ img {
 }
 
 /* Hide content */
-#tab-1-content,
-#tab-2-content,
-#tab-3-content {
+.tab-content-item {
 	display: none;
 }
 .show {
-	display: block !important;
+	display: block;
 }
