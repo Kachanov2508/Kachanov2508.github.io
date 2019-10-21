@@ -36,18 +36,28 @@ const card2Btn1 = document.querySelector('.card2__btn-1');
 const card2Btn2 = document.querySelector('.card2__btn-2');
 const card2Logo = document.querySelector('.card2__logo');
 
+const tabHeading = document.querySelector('.tab__heading');
+const tabText = document.querySelector('.tab__text');
+
 
 function card2Open() {
     card2.classList.toggle('card2--open');
     card2Photo.classList.toggle('card2__photo--open');
     cart2Heading.classList.toggle('cart2__heading--open');
-    card2Description.classList.toggle('card2__description--open');
     card2Price.classList.toggle('card2__price--open');
     card2Btn1.classList.toggle('card2__btn-1--open');
     card2Btn2.classList.toggle('card2__btn-2--open');
     card2Logo.classList.toggle('card2__logo--open');
-
+    showTab();
 }
 
 
 card2Photo.addEventListener('click', card2Open);
+cart2Heading.addEventListener('click', card2Open);
+
+function showTab() {
+    tabHeading.classList.toggle('tab__heading--open');
+    tabText.classList.toggle('tab__text--open');
+}
+
+function toggleTab() {}
