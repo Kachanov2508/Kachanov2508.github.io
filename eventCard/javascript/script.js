@@ -60,4 +60,6 @@ function showTab() {
     tabText.classList.toggle('tab__text--open');
 }
 
-function toggleTab() {}
+function toggleTab() {
+    if()
+}
