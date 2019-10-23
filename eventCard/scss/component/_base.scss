@@ -1,0 +1,36 @@
+:root {
+    --body-color: #0a0a0c;
+    --header-color: rgba(10, 10, 12, 0.5);
+    --color-primary: #c4b998;
+    --border-color: linear-gradient(#c3a758, #6b521e);
+    --product-color: #111318;
+    --price-color: #937341;
+
+    --heading-2: 2.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0a0a0c;
+    background-image: linear-gradient(rgba(0, 0, 0, .7)), url(/img/Frame.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--color-primary);
+    height: 430rem;
+}
+
+a {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
