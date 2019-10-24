@@ -1,0 +1,12 @@
+.btn {
+    background-image: var(--btn-border);
+    padding: .2rem;
+
+    &__link {
+        background-color: var(--product-color);
+        padding: .8rem 3rem;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
