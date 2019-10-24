@@ -1,6 +1,7 @@
 .btn {
     background-image: var(--btn-border);
     padding: .2rem;
+    opacity: .3;
 
     &__link {
         background-color: var(--product-color);
