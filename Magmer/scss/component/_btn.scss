@@ -1,13 +1,13 @@
 .btn {
     background-image: var(--btn-border);
     padding: .2rem;
-    opacity: .3;
 
     &__link {
         background-color: var(--product-color);
         padding: .8rem 3rem;
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-transform: uppercase;
     }
 }
