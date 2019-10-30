@@ -1,0 +1,15 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    border-bottom: 2px solid $color-text-dark;
+
+
+    & li {
+        font-size: 2rem;
+        padding: .5rem 1rem;
+    }
+}

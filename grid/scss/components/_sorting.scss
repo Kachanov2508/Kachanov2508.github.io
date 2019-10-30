@@ -1,0 +1,26 @@
+.sorting {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    font-size: 1.6rem;
+
+
+
+
+    & P {
+        flex-grow: 1;
+        // grid-area: p;
+        padding: 1rem 2rem;
+    }
+
+    & select {
+        // grid-area: select;
+        background: none;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        color: var(--color-primary);
+        border: 2px solid $color-text-dark;
+        outline: none;
+        text-align: center;
+    }
+}
