@@ -40,6 +40,8 @@
 
 .grid {
 	display: grid;
+	grid-template-columns: 1fr 62vw 1fr;
+	grid-gap: 2rem;
 	grid-template-areas:
 		"	header		header		header	"
 		"	.			cards		.		"
@@ -69,6 +71,10 @@
 
 	& .footer {
 		grid-area: footer;
+	}
+
+	&>* {
+		opacity: 0.3;
 	}
 
 }

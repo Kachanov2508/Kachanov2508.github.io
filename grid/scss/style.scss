@@ -2,6 +2,7 @@
 @import "grid";
 
 @import "sections/header";
+@import "sections/cards";
 
 @import "components/logo";
 @import "components/menu";
@@ -9,3 +10,7 @@
 @import "components/heading-2";
 @import "components/search";
 @import "components/sorting";
+@import "components/card";
+@import "components/btn";
+
+@import "mediaqueries";
