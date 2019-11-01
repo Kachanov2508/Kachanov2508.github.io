@@ -1,5 +1,5 @@
 .heading-2 {
-    font-size: 3.1rem;
+    font-size: calc((100vw - 32rem)/(192 - 32) * (3.5 - 1.6) + 1.6rem);
     text-align: center;
     text-transform: uppercase;
 }
