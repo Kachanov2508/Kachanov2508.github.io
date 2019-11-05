@@ -1,0 +1,29 @@
+.feedback {
+    display: grid;
+    grid-template-areas:
+        ".  heading ."
+        ".  form    .";
+    grid-template-columns: 1fr 62vw 1fr;
+    grid-template-rows: minmax(20rem, 10vw) min-content;
+    background-image: linear-gradient(175deg, var(--body-color) 18%, var(--header-color) 49%, var(--body-color) 82%),
+        url(/img/hero.jpg);
+    background-size: cover;
+
+    // 1100px
+    @media (max-width: 75em) {
+        grid-template-columns: 1fr 85vw 1fr;
+    }
+
+    @media (max-width: 56.25em) {
+        grid-template-columns: 1fr minmax(min-content, 62vw) 1fr;
+    }
+
+    &__heading {
+        grid-area: heading;
+        text-align: center;
+    }
+}
+
+.form {
+    grid-area: form;
+}

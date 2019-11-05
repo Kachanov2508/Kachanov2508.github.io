@@ -1,50 +1,26 @@
 .card {
     display: grid;
-    grid-template-areas:
-        "	photo	name	        name	        price	    "
-        "	photo	description	    description	    description	"
-        "	photo	basket	        buy	            provider	";
-    grid-template-columns: 38% repeat(3, 1fr);
-    grid-template-rows: min-content 1fr min-content;
-    grid-gap: 1rem;
-    max-height: 13vw;
-    // padding: 2rem;
+    grid-template-areas: "photo   info";
+    grid-template-columns: 38% 1fr;
+    grid-template-rows: minmax(20rem, 13vw);
     background-color: $color-item;
 
-    // 1800px
-    @media (max-width: 112.5em) {
-        max-height: 14vw;
-    }
-
-    // 1400px
-    @media (max-width: 87.5em) {
-        max-height: 16vw;
-    }
-
-    // 1200px
-    @media (max-width: 75em) {
-        max-height: 18vw;
-    }
-
-    // 1000px
-    @media (max-width: 62.5em) {
-        max-height: 20vw;
-    }
-
-    // 900px
+    // 1100
     @media (max-width: 56.25em) {
         grid-template-areas:
-            "	photo	        photo	        photo	    "
-            "	name	        name	        provider	"
-            "	description	    description	    description	"
-            "	price	        basket	        basket	    "
-            "	price	        buy	            buy	        ";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, auto) 10rem repeat(2, auto);
-        max-height: none;
+            "photo"
+            "info";
+        grid-template-columns: 35vw;
+        grid-template-rows: calc(35vw / (16 / 9)) 35vw;
     }
 
-    & .card__photo {
+    // 700px
+    @media (max-width: 43.75em) {
+        grid-template-columns: 80vw;
+        grid-template-rows: calc(80vw / (16 / 9)) 50vw;
+    }
+
+    &__photo {
         grid-area: photo;
 
         & img {
@@ -55,81 +31,60 @@
         }
     }
 
-    & .card__name {
-        grid-area: name;
-        font-weight: 400;
-        padding-top: 1rem;
+    &__info {
+        grid-area: info;
+        padding: 1rem;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "	name	        name	        price	    "
+            "	description	    description	    description	"
+            "	basket	        buy	            provider	";
+        grid-template-columns: repeat(3, 1fr);
 
-        // 900px
+        // 1100
         @media (max-width: 56.25em) {
-            padding: 0 0 0 1rem;
+            grid-template-areas:
+                "name           name            provider"
+                "description    description     description"
+                "price          buy             buy"
+                "price          basket          basket";
         }
     }
 
-    & .card__price {
+    &__name {
+        grid-area: name;
+        font-size: calc((100vw - 32rem) / (192 - 32) * (2.7 - 2) + 2rem);
+    }
+
+    &__price {
         grid-area: price;
-        justify-self: end;
-        font-size: 2rem;
+        align-self: center;
+        justify-self: center;
+        font-size: calc((100vw - 32rem) / (192 - 32) * (2.7 - 1.8) + 1.8rem);
         font-weight: 400;
         color: $color-text-dark;
-        line-height: 1;
-        padding-top: 1rem;
-        padding-right: 1rem;
-
-        // 900px
-        @media (max-width: 56.25em) {
-            padding: 0 0 0 1rem;
-            justify-self: center;
-            align-self: center;
-            text-align: center;
-            font-size: 2.5rem;
-        }
+        text-align: center;
     }
 
-    & .card__description {
+    &__description {
         grid-area: description;
         overflow: hidden;
-        padding-right: 1rem;
-
-        // 900px
-        @media (max-width: 56.25em) {
-            padding: 0 1rem;
-        }
     }
 
-    & .card__basket {
+    &__basket {
         grid-area: basket;
-        padding-bottom: 1rem;
-
-        // 900px
-        @media (max-width: 56.25em) {
-            padding: 0 1rem 0 0;
-        }
     }
 
-    & .card__buy {
+    &__buy {
         grid-area: buy;
-        padding-bottom: 1rem;
-
-        // 900px
-        @media (max-width: 56.25em) {
-            padding: 0 1rem 1rem 0;
-        }
     }
 
-    & .card__provider {
+    &__provider {
         grid-area: provider;
-        margin-bottom: 1rem;
         background-image: url(../img/party2go.png);
         background-size: contain;
-        background-repeat: no-repeat;
         background-position: center;
-
-        // 900px
-        @media (max-width: 56.25em) {
-            margin: 0;
-        }
-
+        background-repeat: no-repeat;
     }
-
 }

@@ -1,7 +1,7 @@
 .menu {
 	justify-self: end;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2rem;
 	align-content: center;
 
@@ -10,7 +10,13 @@
 	padding: 1rem 2rem;
 
 	& li {
-		font-size: 2rem;
+		font-size: calc((100vw - 32rem)/(192 - 32) * (2 - 1.5) + 1.5rem);
 		text-align: center;
+	}
+
+	// 1100px
+	@media (max-width: 75em) {
+		justify-self: stretch;
+		margin-bottom: 5rem;
 	}
 }
