@@ -1,32 +1,15 @@
 .header {
     display: grid;
-    grid-template-columns: 1fr 62vw 1fr;
-    grid-gap: 1rem 2rem;
+    grid-template-columns: 1fr 114rem 1fr;
+    grid-gap: 2rem;
     grid-template-areas:
-        "	logo	menu	    menu    "
-        "	logo	h1	        .	    "
+        "	menu	menu	    menu    "
+        "	.	    h1	        .	    "
         "	.	    h2	        .	    "
         "	.	    search	    .	    "
         "	.	    example	    .	    "
         "	.	    sorting	    .	    ";
-    grid-template-rows: 7vh min-content repeat(auto-fit, min-content);
-
-    // 1100px
-    @media (max-width: 75em) {
-        grid-template-areas:
-            "	.	    logo	    .	    "
-            "	.	    menu	    .	    "
-            "	.	    h1	        .	    "
-            "	.	    h2	        .	    "
-            "	.	    search	    .	    "
-            "	.	    example	    .	    "
-            "	.	    sorting	    .	    ";
-        grid-template-columns: 1fr 85vw 1fr;
-    }
-
-    & .logo {
-        grid-area: logo;
-    }
+    grid-template-rows: repeat(auto-fit, min-content);
 
     & .menu {
         grid-area: menu;

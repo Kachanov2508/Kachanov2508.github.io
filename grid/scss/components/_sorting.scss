@@ -7,10 +7,6 @@
 
     & P {
         justify-self: start;
-
-        @media(max-width: 43.75em) {
-            justify-self: center;
-        }
     }
 
     & select {
@@ -22,9 +18,5 @@
         outline: none;
         text-align: center;
         justify-self: end;
-
-        @media(max-width: 43.75em) {
-            justify-self: center;
-        }
     }
 }

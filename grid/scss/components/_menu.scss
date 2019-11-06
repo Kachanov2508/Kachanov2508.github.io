@@ -1,22 +1,33 @@
 .menu {
-	justify-self: end;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 2rem;
-	align-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	padding: 3rem 0 0 3rem;
 
-	list-style: none;
-	border-bottom: 2px solid $color-text-dark;
-	padding: 1rem 2rem;
+	& .logo {
+		width: 13rem;
 
-	& li {
-		font-size: calc((100vw - 32rem)/(192 - 32) * (2 - 1.5) + 1.5rem);
-		text-align: center;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			display: block;
+		}
 	}
 
-	// 1100px
-	@media (max-width: 75em) {
-		justify-self: stretch;
-		margin-bottom: 5rem;
+	& .nav {
+		justify-self: end;
+
+		& ul {
+			display: grid;
+			grid-template-columns: repeat(3, max-content);
+			grid-column-gap: 3rem;
+			justify-content: space-around;
+
+			list-style: none;
+			padding: 0 3rem 2rem 3rem;
+			border-bottom: 2px solid $color-text-dark;
+			font-size: calc((100vw - 32rem)/(192 - 32) * (2 - 1.8) + 1.8rem);
+		}
 	}
 }

@@ -1,90 +1,66 @@
 .card {
-    display: grid;
-    grid-template-areas: "photo   info";
-    grid-template-columns: 38% 1fr;
-    grid-template-rows: minmax(20rem, 13vw);
-    background-color: $color-item;
+	display: grid;
+	grid-template-areas: "photo   info";
+	grid-template-columns: 43rem 1fr;
+	grid-template-rows: 25rem;
+	background-color: $color-item;
 
-    // 1100
-    @media (max-width: 56.25em) {
-        grid-template-areas:
-            "photo"
-            "info";
-        grid-template-columns: 35vw;
-        grid-template-rows: calc(35vw / (16 / 9)) 35vw;
-    }
+	&__photo {
+		grid-area: photo;
 
-    // 700px
-    @media (max-width: 43.75em) {
-        grid-template-columns: 80vw;
-        grid-template-rows: calc(80vw / (16 / 9)) 50vw;
-    }
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
 
-    &__photo {
-        grid-area: photo;
+	&__info {
+		grid-area: info;
+		padding: 1rem;
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-areas:
+			"	name	        name	        price	    "
+			"	description	    description	    description	"
+			"	basket	        buy	            provider	";
+		grid-template-columns: repeat(3, 1fr);
+	}
 
-        & img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-    }
+	&__name {
+		grid-area: name;
+		font-size: calc((100vw - 32rem) / (192 - 32) * (2.7 - 2) + 2rem);
+	}
 
-    &__info {
-        grid-area: info;
-        padding: 1rem;
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-areas:
-            "	name	        name	        price	    "
-            "	description	    description	    description	"
-            "	basket	        buy	            provider	";
-        grid-template-columns: repeat(3, 1fr);
+	&__price {
+		grid-area: price;
+		align-self: center;
+		justify-self: center;
+		font-size: calc((100vw - 32rem) / (192 - 32) * (2.7 - 1.8) + 1.8rem);
+		font-weight: 400;
+		color: $color-text-dark;
+		text-align: center;
+	}
 
-        // 1100
-        @media (max-width: 56.25em) {
-            grid-template-areas:
-                "name           name            provider"
-                "description    description     description"
-                "price          buy             buy"
-                "price          basket          basket";
-        }
-    }
+	&__description {
+		grid-area: description;
+		overflow: hidden;
+	}
 
-    &__name {
-        grid-area: name;
-        font-size: calc((100vw - 32rem) / (192 - 32) * (2.7 - 2) + 2rem);
-    }
+	&__basket {
+		grid-area: basket;
+	}
 
-    &__price {
-        grid-area: price;
-        align-self: center;
-        justify-self: center;
-        font-size: calc((100vw - 32rem) / (192 - 32) * (2.7 - 1.8) + 1.8rem);
-        font-weight: 400;
-        color: $color-text-dark;
-        text-align: center;
-    }
+	&__buy {
+		grid-area: buy;
+	}
 
-    &__description {
-        grid-area: description;
-        overflow: hidden;
-    }
-
-    &__basket {
-        grid-area: basket;
-    }
-
-    &__buy {
-        grid-area: buy;
-    }
-
-    &__provider {
-        grid-area: provider;
-        background-image: url(../img/party2go.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+	&__provider {
+		grid-area: provider;
+		background-image: url(../img/party2go.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 }

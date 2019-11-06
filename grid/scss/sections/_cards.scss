@@ -1,16 +1,4 @@
 .cards {
     display: grid;
     grid-gap: 3rem;
-
-    // 900px
-    @media (max-width: 56.25em) {
-        grid-template-columns: repeat(auto-fit, 35vw);
-        justify-items: center;
-        justify-content: center;
-    }
-
-    // 700px
-    @media (max-width: 43.75em) {
-        grid-template-columns: 80vw;
-    }
 }

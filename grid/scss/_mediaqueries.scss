@@ -1,0 +1,176 @@
+// 1200px
+@media (max-width: 75em) {
+    .grid {
+        grid-template-columns: 1fr 92rem 1fr;
+    }
+
+    .header {
+        grid-template-columns: 1fr 92rem 1fr;
+    }
+
+    .card {
+        grid-template-columns: 35rem 1fr;
+        grid-template-rows: 20rem;
+    }
+
+    .feedback {
+        grid-template-columns: 1fr 92rem 1fr;
+    }
+}
+
+
+
+// 1000px
+@media (max-width: 62.5em) {
+    .grid {
+        grid-template-columns: 1fr 76rem 1fr;
+    }
+
+    .header {
+        grid-template-columns: 1fr 76rem 1fr;
+    }
+
+    .card {
+        grid-template-columns: 29rem 1fr;
+        grid-template-rows: 16rem;
+    }
+
+    .feedback {
+        grid-template-columns: 1fr 76rem 1fr;
+    }
+}
+
+
+
+// 900px
+@media (max-width: 56.25em) {
+    .grid {
+        grid-template-columns: 1fr 64rem 1fr;
+    }
+
+    .header {
+        grid-template-columns: 1fr 64rem 1fr;
+        grid-template-areas:
+            "	.	    menu	    .       "
+            "	.	    h1	        .	    "
+            "	.	    h2	        .	    "
+            "	.	    search	    .	    "
+            "	.	    example	    .	    "
+            "	.	    sorting	    .	    ";
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        padding: 3rem 3rem 0 3rem;
+
+        & .nav {
+            justify-self: stretch;
+            align-self: center;
+        }
+    }
+
+    .cards {
+        grid-template-columns: 31rem 31rem;
+    }
+
+    .card {
+        grid-template-areas:
+            "photo"
+            "info";
+        grid-template-columns: 1fr;
+        grid-template-rows: 17.5rem 31rem;
+    }
+
+    .card__info {
+        grid-template-areas:
+            "name	        name	        provider	"
+            "description	description	    description	"
+            "price	        buy	            buy	        "
+            "price	        basket	        basket	";
+    }
+
+    .feedback {
+        grid-template-columns: 1fr 64rem 1fr;
+
+        & .form {
+            grid-template-areas:
+                "	heading	    "
+                "	name	    "
+                "	phone	    "
+                "	email	    "
+                "	message	    "
+                "	radio	    "
+                "	btn	        "
+                "	top-secret	";
+        }
+    }
+
+}
+
+// 700px
+@media (max-width: 43.75em) {
+    .grid {
+        grid-template-columns: 1fr 40rem 1fr;
+    }
+
+    .header {
+        grid-template-columns: 1fr 40rem 1fr;
+    }
+
+    .sorting {
+        justify-self: center;
+
+        & p {
+            justify-self: center;
+        }
+
+        & select {
+            justify-self: center;
+        }
+    }
+
+    .cards {
+        grid-template-columns: 40rem;
+        justify-content: center;
+    }
+
+    .card {
+        grid-template-rows: 22.5rem 30rem;
+    }
+
+    .feedback {
+        grid-template-columns: 1fr 40rem 1fr;
+
+        & .form {
+            padding: 3rem;
+        }
+    }
+}
+
+@media (max-width: 31.25em) {
+    .grid {
+        grid-template-columns: 1fr 28rem 1fr;
+    }
+
+    .header {
+        grid-template-columns: 1fr 28rem 1fr;
+
+        & .menu {
+            padding: 3rem 0 0 0;
+        }
+    }
+
+    .cards {
+        grid-template-columns: 30rem;
+    }
+
+    .feedback {
+        grid-template-columns: 1fr 28rem 1fr;
+
+        & .form {
+            padding: 1rem;
+        }
+    }
+}

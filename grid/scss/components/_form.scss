@@ -11,20 +11,6 @@
     padding: 3rem 8rem;
     background-color: $color-item;
 
-    @media (max-width: 56.25em) {
-        grid-template-areas:
-            "heading"
-            "name"
-            "phone"
-            "email"
-            "message"
-            "top-secret"
-            "radio"
-            "btn";
-        grid-template-rows: repeat(4, min-content) 15rem repeat(3, min-content);
-        padding: 3rem;
-    }
-
     &__heading {
         grid-area: heading;
         font-size: calc((100vw - 32rem)/(192 - 32) * (2.5 - 1.8) + 1.8rem);
@@ -107,10 +93,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
-
-        @media (max-width: 56.25em) {
-            justify-items: center;
-        }
 
         &-input {
             display: none;

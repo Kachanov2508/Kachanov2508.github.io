@@ -1,6 +1,6 @@
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 62vw 1fr;
+	grid-template-columns: 1fr 114rem 1fr;
 	grid-gap: 2rem;
 	grid-template-areas:
 		"	header		header		header	"
@@ -9,12 +9,6 @@
 		"	feedback	feedback	feedback"
 		"	.			contacts	.		"
 		"	footer		footer		footer	";
-
-	// 1200px
-	@media (max-width: 75em) {
-		grid-template-columns: 1fr 85vw 1fr;
-	}
-
 
 	& .header {
 		grid-area: header;
