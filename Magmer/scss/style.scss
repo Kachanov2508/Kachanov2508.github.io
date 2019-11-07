@@ -1,3 +1,21 @@
-@import "component/base";
-@import "component/grid";
-@import "component/btn";
+@import "base";
+@import "grid";
+
+@import "sections/header";
+@import "sections/cards";
+@import "sections/feedback";
+@import "sections/contacts";
+@import "sections/footer";
+
+@import "components/menu";
+@import "components/heading-1";
+@import "components/heading-2";
+@import "components/search";
+@import "components/example";
+@import "components/sorting";
+@import "components/card";
+@import "components/btn";
+@import "components/show-more";
+@import "components/form";
+
+@import "mediaqueries";

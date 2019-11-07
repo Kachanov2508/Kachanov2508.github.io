@@ -5,34 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-    <title>Event card</title>
+    <title>Document</title>
 </head>
 
 <body class="grid">
-    <div class="header">
-        <ul>
-            <li><a href="#">Телефон</a></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Корзина</a></li>
-        </ul>
-        <figure>
-            <img src="img/magmer.svg" alt="Magmer logo">
-            <!-- <img src="img/M.svg" alt="Magmer logo"> -->
-        </figure>
-        <header>
-            <h1>Находить а не искать</h1>
-            <p>Тысячи различных аттракционов для любого праздника</p>
-        </header>
+    <header class="header">
+        <div class="menu">
+            <figure class="logo">
+                <img src="img/magmer.svg" alt="magmer logo">
+            </figure>
+            <nav class="nav">
+                <ul>
+                    <li>Телефон</li>
+                    <li>Email</li>
+                    <li>Корзина</li>
+                </ul>
+                <div class="nav__line"></div>
+            </nav>
+        </div>
+        <h1 class="heading-1">Находить а не искать</h1>
+        <h2 class="heading-2 mb-3">Тысячи различных аттракционов для любого праздника</h2>
         <div class="search">
             <input type="search" placeholder="Что вы хотите найти?">
-            <p>например: <span>детские аттракционы; пейнтбол; силомер; батут</span></p>
         </div>
+        <div class="example mb-5">например: <span>детские аттракционы; пейнтбол; силомер; батут</span></div>
         <div class="sorting">
             <p>всего аттракционов: 3752</p>
-            <!-- <p>Сортироать <span>по поставщикам</span></p> -->
             <select>
                 <option hidden disabled selected>Сортироать по поставщикам</option>
                 <option>Party2Go</option>
@@ -41,208 +41,142 @@
                 <option>ProInterActive</option>
             </select>
         </div>
-    </div>
-
-    <main>
-        <div class="product-list">
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
+    </header>
+    <main class="cards">
+        <div class="card">
+            <figure class="card__photo">
+                <img src="img/card.jpg" alt="Card image 1">
+            </figure>
+            <div class="card__info">
+                <h2 class="card__name">Product name</h2>
+                <p class="card__price">51 700 руб.</p>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore!</p>
+                <div class="card__basket">
                     <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
+                        <a href="#">В корзину</a>
                     </div>
                 </div>
-                <div class="product__btn-2">
+                <div class="card__buy">
                     <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
+                        <a href="#">Заказать</a>
                     </div>
                 </div>
-                <figure class="product__supplier"></figure>
-            </div>
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>
-                </div>
-                <div class="product__btn-2">
-                    <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
-                    </div>
-                </div>
-                <figure class="product__supplier"></figure>
-            </div>
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>
-                </div>
-                <div class="product__btn-2">
-                    <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
-                    </div>
-                </div>
-                <figure class="product__supplier"></figure>
-            </div>
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>
-                </div>
-                <div class="product__btn-2">
-                    <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
-                    </div>
-                </div>
-                <figure class="product__supplier"></figure>
-            </div>
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>
-                </div>
-                <div class="product__btn-2">
-                    <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
-                    </div>
-                </div>
-                <figure class="product__supplier"></figure>
-            </div>
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>
-                </div>
-                <div class="product__btn-2">
-                    <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
-                    </div>
-                </div>
-                <figure class="product__supplier"></figure>
-            </div>
-            <div class="item product">
-                <figure class="product__photo">
-                    <img src="img/card.jpg" alt="product photo">
-                </figure>
-                <h2 class="product__heading">Product name</h2>
-                <p class="product__price">49 980 руб.</p>
-                <p class="product__description">Задача организации, в особенности же рамки и место обучения кадров
-                    позволяет оценить значение форм развития. Таким образом постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового
-                    участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от
-                    нас анализа соответствующий условий активизации. Повседневная практика показывает, что дальнейшее
-                    развитие различных форм деятельности требуют определения и уточнения форм развития. Товарищи! рамки
-                    и место обучения кадров требуют от нас анализа соответствующий условий активизации. Таким образом
-                    укрепление и развитие структуры позволяет оценить значение существенных финансовых и
-                    административных условий.</p>
-                <div class="product__btn-1">
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>
-                </div>
-                <div class="product__btn-2">
-                    <div class="btn">
-                        <a href="#" class="btn__link">В корзину</a>
-                    </div>
-                </div>
-                <figure class="product__supplier"></figure>
+                <div class="card__provider"></div>
             </div>
         </div>
-        <div class="show-more">
-            <div class="btn">
-                <a href="#" class="btn__link">Показать больше</a>
+        <div class="card">
+            <figure class="card__photo">
+                <img src="img/card.jpg" alt="Card image 1">
+            </figure>
+            <div class="card__info">
+                <h2 class="card__name">Product name</h2>
+                <p class="card__price">51 700 руб.</p>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore!</p>
+                <div class="card__basket">
+                    <div class="btn">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="card__buy">
+                    <div class="btn">
+                        <a href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="card__provider"></div>
+            </div>
+        </div>
+        <div class="card">
+            <figure class="card__photo">
+                <img src="img/card.jpg" alt="Card image 1">
+            </figure>
+            <div class="card__info">
+                <h2 class="card__name">Product name</h2>
+                <p class="card__price">51 700 руб.</p>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore!</p>
+                <div class="card__basket">
+                    <div class="btn">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="card__buy">
+                    <div class="btn">
+                        <a href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="card__provider"></div>
+            </div>
+        </div>
+        <div class="card">
+            <figure class="card__photo">
+                <img src="img/card.jpg" alt="Card image 1">
+            </figure>
+            <div class="card__info">
+                <h2 class="card__name">Product name</h2>
+                <p class="card__price">51 700 руб.</p>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore!</p>
+                <div class="card__basket">
+                    <div class="btn">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="card__buy">
+                    <div class="btn">
+                        <a href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="card__provider"></div>
+            </div>
+        </div>
+        <div class="card">
+            <figure class="card__photo">
+                <img src="img/card.jpg" alt="Card image 1">
+            </figure>
+            <div class="card__info">
+                <h2 class="card__name">Product name</h2>
+                <p class="card__price">51 700 руб.</p>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore!</p>
+                <div class="card__basket">
+                    <div class="btn">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="card__buy">
+                    <div class="btn">
+                        <a href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="card__provider"></div>
+            </div>
+        </div>
+        <div class="card">
+            <figure class="card__photo">
+                <img src="img/card.jpg" alt="Card image 1">
+            </figure>
+            <div class="card__info">
+                <h2 class="card__name">Product name</h2>
+                <p class="card__price">51 700 руб.</p>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam minima quasi quae vero corrupti eaque, magni molestiae repellendus optio porro repudiandae mollitia, similique laborum, illo dolore amet. Esse, impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quos nemo veniam. Eligendi sed cumque exercitationem architecto consequatur voluptatum, repellat dolorum nobis illum incidunt ratione cupiditate vitae similique optio inventore!</p>
+                <div class="card__basket">
+                    <div class="btn">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="card__buy">
+                    <div class="btn">
+                        <a href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="card__provider"></div>
             </div>
         </div>
     </main>
+    <div class="show-more">
+        <div class="btn">
+            <a href="#">Показать больше</a>
+        </div>
+    </div>
 
-    <section class="item feedback">
+    <section class="feedback">
         <div class="feedback__heading">
             <img src="img/questions.svg" alt="Появились вопросы">
             <h2>Появились вопросы</h2>
@@ -284,8 +218,10 @@
                 </div>
             </div>
             <div class="form__top-secret">
-                <img src="img/top_secret.svg" alt="form top-secret">
-                <div class="form__top-secret--heading">
+                <figure>
+                    <img src="img/top_secret.svg" alt="form top-secret">
+                </figure>
+                <div class="form__top-secret-heading">
                     <h3>Конфиденциальность</h3>
                     <p>Мы обязуемся не передавать полученную информацию третьим лицам.</p>
                 </div>
@@ -293,38 +229,44 @@
         </form>
     </section>
 
-    <section class="item contacts">
-        <div class="contacts__phone">
-            <figure>
+
+    <section class="contacts">
+        <div class="contacts__item">
+            <figure class="contacts__top">
                 <img src="img/contacts-phone.svg" alt="contacts-phone">
             </figure>
-            <p class="contacts__phone--1">Позвоните нам</p>
-            <p class="contacts__phone--2">Есть вопросы? Мы поможем!</p>
-            <p class="contacts__phone--3">8(985)987-99-69</p>
+            <div class="contacts__bottom">
+                <p class="contacts__bottom-1">Позвоните нам</p>
+                <p class="contacts__bottom-2">Есть вопросы? Мы поможем!</p>
+                <p class="contacts__bottom-3">8(985)987-99-69</p>
+            </div>
         </div>
-        <div class="contacts__work">
-            <figure>
+        <div class="contacts__item">
+            <figure class="contacts__top">
                 <img src="img/contacts-work.svg" alt="contacts-work">
             </figure>
-            <p class="contacts__work--1">График работы</p>
-            <p class="contacts__work--2">Мы работаем для вас!</p>
-            <p class="contacts__work--3">09:00 - 19:00</p>
+            <div class="contacts__bottom">
+                <p class="contacts__bottom-1">График работы</p>
+                <p class="contacts__bottom-2">Мы работаем для вас!</p>
+                <p class="contacts__bottom-3">09:00 - 19:00</p>
+            </div>
         </div>
-        <div class="contacts__email">
-            <figure>
+        <div class="contacts__item">
+            <figure class="contacts__top">
                 <img src="img/contacts-email.svg" alt="contacts-email">
             </figure>
-            <p class="contacts__email--1">Напишите нам</p>
-            <p class="contacts__email--2">Сомневаетесь с выбором?</p>
-            <p class="contacts__email--3">info@magmer.ru</p>
+            <div class="contacts__bottom">
+                <p class="contacts__bottom-1">Напишите нам</p>
+                <p class="contacts__bottom-2">Сомневаетесь с выбором?</p>
+                <p class="contacts__bottom-3">info@magmer.ru</p>
+            </div>
         </div>
     </section>
 
-    <footer class="item">Copyright © Magmer 2019. All Rights Reserved</footer>
-
-
-
-    <script src="javascript/script.js"></script>
+    <footer class="footer">
+        <div class="footer__line"></div>
+        <p>Copyright © Magmer 2019. All Rights Reserved</p>
+    </footer>
 </body>
 
 </html>
