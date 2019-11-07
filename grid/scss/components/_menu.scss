@@ -25,9 +25,14 @@
 			justify-content: space-around;
 
 			list-style: none;
-			padding: 0 3rem 2rem 3rem;
-			border-bottom: 2px solid $color-text-dark;
-			font-size: calc((100vw - 32rem)/(192 - 32) * (2 - 1.8) + 1.8rem);
+			padding: 0 3rem 3rem 10rem;
+			font-size: 2rem;
+		}
+
+		&__line {
+			height: 2px;
+			width: 100%;
+			background-image: linear-gradient(90deg, transparent 0%, $color-text-dark 100%);
 		}
 	}
 }
