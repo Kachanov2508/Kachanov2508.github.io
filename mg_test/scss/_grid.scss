@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr $width 1fr;
+    grid-template-rows: 70vh $height repeat(3, 1fr);
+
+    & .header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    & .card-list {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    & .feedback {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    & .contacts {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    & .footer {
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+}
