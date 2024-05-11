@@ -350,7 +350,7 @@ h1, h2, h3, h4 {
 
 .steps__items::after {
     content: "";
-    background-image: url('/img/airplane.png');
+    background-image: url(./img/airplane.png);
     background-repeat: no-repeat;
     width: 401px;
     height: 235px;
