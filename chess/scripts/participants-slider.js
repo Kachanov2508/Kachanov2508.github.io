@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     qtyItems[0].textContent = numSlides; // Изменить текущей номер слайда
     qtyItems[1].textContent = cards.length; // Изменить общее количество слайдов
 
-
     // Автоматическая прокрутка слайдов
 	function startSlider() {
 		intervalId = setInterval(function () {
